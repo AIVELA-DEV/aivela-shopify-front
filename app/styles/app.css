@@ -592,3 +592,399 @@ button.reset:hover:not(:has(> *)) {
   gap: 0.75rem;
   flex-wrap: wrap;
 }
+
+/*
+* --------------------------------------------------
+* routes/design-adapt
+* --------------------------------------------------
+*/
+.design-adapt-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 0.75rem 2.5rem;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+  color: #111827;
+}
+
+.design-adapt-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 0 0.75rem;
+  border-bottom: 1px solid #f3f4f6;
+  margin-bottom: 0.95rem;
+}
+
+.design-adapt-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.design-adapt-buy-now {
+  background: #111;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.65rem 1.25rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.design-adapt-hero {
+  display: grid;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.95rem;
+}
+
+@media (min-width: 48em) {
+  .design-adapt-hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+.design-adapt-tag {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.design-adapt-hero h1 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.design-adapt-hero p {
+  color: #3f3f46;
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+}
+
+.design-adapt-hero-actions,
+.design-adapt-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.design-adapt-hero-actions button,
+.design-adapt-card-actions button,
+.design-adapt-link {
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1.25;
+}
+
+.design-adapt-link {
+  background: #fff;
+  color: #111;
+  border: 1.4px solid #111;
+}
+
+.design-adapt-hero-points {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  color: #374151;
+  font-size: 0.76rem;
+}
+
+.design-adapt-card-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.design-adapt-hero-image img,
+.design-adapt-card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.design-adapt-hero-image {
+  border-radius: 0.9rem;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.design-adapt-colors {
+  background: #f9fafb;
+  border-radius: 0.9rem;
+  padding: 0.85rem 0.7rem;
+  border: 1px solid #f3f4f6;
+}
+
+.design-adapt-colors h3 {
+  text-align: center;
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+}
+
+.design-adapt-colors-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.design-adapt-color-item {
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 0.6rem;
+  padding: 0.35rem 0.45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+}
+
+.design-adapt-color-item.active {
+  background: #fff;
+  border-color: #111;
+}
+
+.design-adapt-color-dot {
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 999px;
+  border: 1px solid #d4d4d8;
+}
+
+.design-adapt-grid {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1.2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 40em) {
+  .design-adapt-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design-adapt-card {
+  border: 1px solid #e4e4e7;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  background: #fff;
+}
+
+.design-adapt-card h2 {
+  margin: 0.45rem 0 0.3rem;
+  font-size: 0.92rem;
+}
+
+.design-adapt-card p {
+  margin: 0 0 0.45rem;
+  color: #3f3f46;
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+
+.design-adapt-image-placeholder {
+  aspect-ratio: 1 / 1;
+  background: #f4f4f5;
+  display: grid;
+  place-items: center;
+  color: #71717a;
+}
+
+.design-adapt-empty {
+  border: 1px dashed #d4d4d8;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.design-adapt-features,
+.design-adapt-specs,
+.design-adapt-scenarios {
+  margin-top: 1.65rem;
+}
+
+.design-adapt-features h2,
+.design-adapt-specs h2,
+.design-adapt-scenarios h2 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.design-adapt-features-grid {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 48em) {
+  .design-adapt-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.design-adapt-feature-item {
+  border: 1px solid #e4e4e7;
+  border-radius: 0.7rem;
+  padding: 0.65rem;
+  background: #fafafa;
+}
+
+.design-adapt-feature-item h3 {
+  margin: 0 0 0.28rem;
+  font-size: 0.86rem;
+}
+
+.design-adapt-feature-item p {
+  margin: 0;
+  color: #3f3f46;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.design-adapt-scenarios-grid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 48em) {
+  .design-adapt-scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design-adapt-specs-grid {
+  display: grid;
+  gap: 0.8rem;
+  background: #f9fafb;
+  border-radius: 0.9rem;
+  padding: 0.75rem;
+}
+
+@media (min-width: 48em) {
+  .design-adapt-specs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.design-adapt-specs-grid img {
+  width: 100%;
+  border-radius: 0.75rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.design-adapt-spec-list {
+  padding: 0 0.1rem;
+}
+
+.design-adapt-spec-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #e4e4e7;
+  padding: 0.5rem 0;
+  font-size: 0.78rem;
+}
+
+.design-adapt-spec-item:last-child {
+  border-bottom: 0;
+}
+
+.design-adapt-scenarios-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.design-adapt-scenarios-grid h3 {
+  margin: 0.4rem 0 0.22rem;
+  font-size: 0.9rem;
+}
+
+.design-adapt-scenarios-grid p {
+  margin: 0;
+  color: #3f3f46;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.design-adapt-cta {
+  margin-top: 1.7rem;
+  background: #111;
+  color: #fff;
+  border-radius: 0.9rem;
+  padding: 1.4rem 0.8rem;
+  text-align: center;
+}
+
+.design-adapt-cta h2 {
+  margin: 0 0 0.42rem;
+  font-size: clamp(1.5rem, 4.6vw, 2.3rem);
+}
+
+.design-adapt-cta p {
+  margin: 0 0 0.62rem;
+  color: #d1d5db;
+  font-size: 0.86rem;
+}
+
+.design-adapt-cta-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+}
+
+.design-adapt-cta-actions button,
+.design-adapt-cta-actions .design-adapt-link {
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.78rem;
+}
+
+.design-adapt-cta-actions .design-adapt-link,
+.design-adapt-cta-actions form button {
+  background: #fff;
+  color: #111;
+  border: 1px solid #fff;
+}
+
+.design-adapt-cta-outline {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.design-adapt-cta-points {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  font-size: 0.68rem;
+  color: #9ca3af;
+}
